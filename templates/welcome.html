@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+  <head>
+  <title> Welcome </title>
+  <div class='container'>
+  <h1 class ='display-4'> 회원가입 </h1><br>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  <form action='/welcome' method='post' id='reg'>
+  <div class='form-group'>
+  <label for='user_id'>아이디</label>
+  <input type='text' class='form-control' id='user_id' placeholder='ID' name='user_id'><br>
+  <label for='password'>비밀번호</label>
+  <input type='password' class='form-control' id='password' placeholder='PW' name='password'><br>
+  <label for='name'>이름</label>
+  <input type='text' class='form-control' id='name' placeholder='Name' name='name'><br>
+  <label for='email'>이메일</label>
+  <input type='email' class='form-control' id='email' placeholder='Email@example.com' name='email'><br>
+  <label for='mobile'>모바일</label>
+  <input type='text' class='form-control' id='mobile' placeholder='Mobile' name='mobile'><br>
+  <button type='submit' class='btn btn-primary btn-md'>회원가입</button>
+  </div>
+  </body>
+  </html>

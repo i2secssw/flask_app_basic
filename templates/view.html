@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+  <title>test board</title><br>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  <div class='container'>
+  {% if perm %}
+  <button class='btn btn-primary btm-md' style='display:inline' onclick="location.href='/main/modi/{{ data[0][0] }}'">게시글 수정</button>
+  <button class='btn btn-primary btm-md' style='display:inline' onclick="location.href='/main/del/{{ data[0][0] }}'">게시글 삭제</button><br>
+  {% endif %}
+  <table class='table table-bordered'>
+  <thead>
+  <tr>
+  <th style='text-align:center;vertical-align:middle;' >작성자</th>
+  <th>{{ data[0][3] }}</th>
+  </tr>
+  <tr>
+  <th style='text-align:center;vertical-align:middle;' >작성일</th>
+  <th>{{ data[0][4] }}</th>
+  </tr>
+  <tr>
+  <th style='text-align:center;vertical-align:middle;' >제목</th>
+  <th>{{ data[0][1] }}</th>
+  </tr>
+  <tr>
+  <th style='text-align:center;vertical-align:middle;' >내용</th>
+  <th style='height: 500px; text-align:left;vertical-align:top;'>{{ data[0][2] }}</th>
+  </tr>
+  <button class='btn btn-primary btm-md' style='display:inline' onclick="location.href='/main'">이전</button>
+  </div>
+  </body>
+  </html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+  <head>
+  <div class='container'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  <br><br>
+  <h1 style='text-align:center;'><small> 게시글작성</small></h1><br>  
+  <form action='/write' style='display:inline;' method='post'>
+  <div class='form-group' id='box'>
+  <label for='title'>제목</label>
+  <textarea class='form-control' id='title' rows='1' name='title' placeholder='제목'></textarea>
+  <label for='content'>내용</label>
+  <textarea class='form-control' id='content' rows='12' name='content' placeholder='내용'></textarea>
+  <input type='submit' value='작성' style='display:inline;' class='btn btn-primary btm-md'>
+  </div>
+  </form>
+  <button class='btn btn-primary btm-md' style='display:inline;' onclick="location.href='/main'">이전</button>
+  </body>
+  </html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+  <head>
+  <div class='container'>
+  <h3 class ='display-4'> 비밀번호 확인 </h3><br>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  <form action='/confirm' style='display:inline;' method='post'>
+  비밀번호<input type='password' class='form-control' placeholder='PW' name='password'><br>
+  <input type='submit' value='확인' style='display:inline;' class='btn btn-primary btm-md'>
+  </form>
+  <button class='btn btn-primary btm-md' style='display:inline;' onclick="location.href='/main'">이전</button>
+  </body>
+  </html>
